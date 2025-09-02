@@ -1,9 +1,70 @@
-.reviewCard {
+.card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  padding: 1rem;
+  gap: var(--space-3);
+  height: 100%; /* lets cards equalize height in a grid */
+}
+
+/* Big readable quote text that scales but doesn't look like a title */
+.quote {
+  color: var(--text);
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+  line-height: 1.6;
+  text-align: left;
+  position: relative;
+  margin: 0;
+  /* optional left accent */
+  border-left: 4px solid var(--brand);
+  padding-left: var(--space-3);
   text-align: center;
-  font-size: 1.3rem;
-  width: 45%;
+}
+
+/* Footer with name + stars */
+.footer {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: auto; /* pushes footer to bottom so quotes align */
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #f3f3f3;
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  margin-left: auto;
+  text-align: right;
+  padding: 0.1rem 0.5rem;
+}
+
+.name {
+  font-weight: 800;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+}
+
+.stars {
+  font-size: 0.9rem;
+  color: #f5a623; /* star gold */
+}
+
+/* If you still want center text on small screens */
+@media (max-width: 560px) {
+  .quote {
+    text-align: center;
+  }
+  .footer {
+    justify-content: center;
+  }
 }

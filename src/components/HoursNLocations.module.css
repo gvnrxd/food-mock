@@ -1,50 +1,80 @@
-.secHeader {
+.section {
+  max-width: 1100px;
+  margin: 48px auto;
+  padding: 0 16px;
+}
+
+.title {
   font-size: 3rem;
-  display: flex;
-  align-self: center;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: var(--space-4);
 }
 
-.secContainer {
-  padding: 1rem;
-  margin: 0;
-  display: flex;
-  justify-self: center;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  height: 20vh;
+.map {
+  width: 100%;
+  height: 400px; /* bigger! */
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 24px;
 }
 
-.secContainer ul {
-  flex: 1 1 400px; /* grows, can shrink, decent starting width */
-  min-width: 0; /* critical for shrinking in flex layouts */
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin: 0;
-  padding: 0;
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
 }
 
-.days {
+.block {
+  background: #ffffff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.h3 {
+  font-size: 18px;
   font-weight: 700;
-  font-size: 1.4rem;
+  margin: 0 0 8px 0;
+}
+
+.text {
+  margin: 0 0 8px 0;
+  color: #444;
+  line-height: 1.5;
 }
 
 .hours {
-  font-style: italic;
+  list-style: none;
+  margin: 0 0 8px 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+  font-size: 16px;
 }
 
-.secContainer ul li {
+.hours li {
   display: flex;
   justify-content: space-between;
-  width: 100%; /* ensure li spans full row */
-  font-size: 1.3rem;
-
-  padding: 0.5rem 1rem;
+  align-items: center;
 }
 
-.secContainer img {
-  height: 100%;
-  object-fit: cover;
+.link {
+  display: inline-block;
+  margin-top: 4px;
+  color: #e75f5d;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Mobile stack */
+@media (max-width: 820px) {
+  .info {
+    grid-template-columns: 1fr;
+  }
 }
