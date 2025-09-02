@@ -1,0 +1,9 @@
+.reviewCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.3rem;
+  width: 45%;
+}

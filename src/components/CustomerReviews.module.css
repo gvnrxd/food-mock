@@ -1,0 +1,12 @@
+.secHeader {
+  font-size: 3rem;
+  display: flex;
+  align-self: center;
+}
+
+.reviewSec {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem;
+}
