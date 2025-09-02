@@ -14,10 +14,10 @@ export default function NavBar() {
             <a href="#">Menu</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="#about-title">About</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#hours-title">Contact</a>
           </li>
         </ul>
       </nav>

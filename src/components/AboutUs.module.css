@@ -59,15 +59,18 @@
   .inner {
     grid-template-columns: 1fr;
   }
+
+  /* force content first, image second */
+  .content {
+    order: 1;
+    text-align: center;
+  }
+
+  .media {
+    order: 2;
+  }
+
   .secHeader {
     text-align: center;
   }
-  .content {
-    text-align: center;
-  }
-}
-
-/* Optional: alternate layout with text first, image second */
-.alt .inner {
-  grid-template-columns: 0.9fr 1.1fr;
 }

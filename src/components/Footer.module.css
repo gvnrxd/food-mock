@@ -1,12 +1,29 @@
 .footer {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* ✅ allows items to wrap on small screens */
   gap: 1rem;
   background: white;
   padding: 1rem;
   font-size: 1.2rem;
+  text-align: center; /* helps when stacked */
 }
 
 .footer a {
   text-decoration: none;
+  color: #333; /* add a safe default color */
+  transition: color 0.2s ease;
+}
+.footer a:hover {
+  color: #e75f5d; /* brand hover */
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column; /* stack vertically */
+    gap: 0.5rem;
+    font-size: 1rem; /* slightly smaller text on phones */
+  }
 }
