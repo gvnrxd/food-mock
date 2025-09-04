@@ -1,8 +1,8 @@
 import styles from "./MenuCard.module.css";
 
-export default function MenuCard({ title, desc, img, alt }) {
+export default function MenuCard({ title, desc, img, alt, onClick }) {
   return (
-    <article className={styles.card}>
+    <article className={styles.card} onClick={onClick}>
       <div className={styles.media}>
         <img
           className={styles.img}

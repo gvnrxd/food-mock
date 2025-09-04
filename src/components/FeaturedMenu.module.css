@@ -19,3 +19,26 @@
   align-items: stretch; /* key */
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+
+.modalImg {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.modalText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.modalText h3 {
+  font-size: 3rem;
+}
+
+.modalText img {
+  width: 80%;
+  height: auto;
+}

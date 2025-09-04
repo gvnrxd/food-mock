@@ -9,6 +9,9 @@ import HoursNLocation from "./components/HoursNLocations";
 import Footer from "./components/Footer";
 
 function App() {
+  function HandleOnClick() {
+    alert("you have clicked a menu card");
+  }
   return (
     <>
       <header>
@@ -17,7 +20,7 @@ function App() {
       </header>
 
       <main>
-        <FeaturedMenu />
+        <FeaturedMenu onClick={HandleOnClick} />
         <AboutUs />
         <CustomerReviews />
         <HoursNLocation />
