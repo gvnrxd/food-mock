@@ -50,8 +50,10 @@ export default function FeaturedMenu() {
 
   return (
     <>
-      <section className={styles.section}>
-        <h2 className={styles.secHeader}>Featured Menu</h2>
+      <section className={styles.section} aria-labelledby="menu-title">
+        <h2 className={styles.secHeader} id="menu-title">
+          Featured Menu
+        </h2>
 
         <div className={styles.grid}>
           {items.map((it) => (
@@ -74,14 +76,7 @@ export default function FeaturedMenu() {
       >
         {activeItem && (
           <div className={styles.modalBody}>
-            <img
-              className={styles.modalImg}
-              src={activeItem.img}
-              alt={activeItem.alt}
-              loading="lazy"
-            />
             <div className={styles.modalText}>
-              <h3>{activeItem.title}</h3>
               <img src={activeItem.menuImg} />
             </div>
           </div>

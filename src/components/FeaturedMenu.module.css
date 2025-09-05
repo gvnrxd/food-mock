@@ -3,6 +3,7 @@
   margin-inline: auto;
   padding-inline: var(--space-4);
   margin-block: var(--space-5);
+  padding-bottom: 2.5rem;
 }
 
 .secHeader {

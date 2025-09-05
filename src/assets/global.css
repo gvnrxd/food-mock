@@ -1,3 +1,11 @@
+/* Fonts */
+
+.chewy-regular {
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* 1) Reset & base */
 *,
 *::before,
@@ -19,10 +27,12 @@ body {
   height: 100%;
 }
 body {
-  background: #fff7f2; /* soft off-white */
+  background: #fff7f2;
   color: #232325; /* readable dark text */
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
-    sans-serif;
+  font-family: "Chewy" system-ui, -apple-system, Segoe UI, Roboto, Helvetica,
+    Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;

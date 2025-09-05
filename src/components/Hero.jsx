@@ -52,8 +52,6 @@ export default function Hero() {
         {activeItem && (
           <div className={styles.modalBody}>
             <div className={styles.modalText}>
-              <h3>{activeItem.title}</h3>
-              {/* If you have a combined menu image, show it here */}
               {activeItem.menuImg && (
                 <img
                   src={activeItem.menuImg}
@@ -67,4 +65,3 @@ export default function Hero() {
     </header>
   );
 }
-
