@@ -38,7 +38,12 @@ export default function Hero() {
             View Menu
           </button>
 
-          <a className={`${styles.btn} ${styles.btnOutline}`} href="/order">
+          <a
+            className={`${styles.btn} ${styles.btnOutline}`}
+            href="https://www.doordash.com/?srsltid=AfmBOopA3yKMAvN0kCZNqoCIYfzDAo3Pq9yutvuQ9Y8A6f7XMqATE6mx"
+            target="_blank"
+            rel=" noopener noreferrer"
+          >
             Order Online
           </a>
         </div>
