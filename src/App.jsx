@@ -15,7 +15,6 @@ function App() {
         <NavBar />
         <Hero />
       </header>
-
       <main>
         <FeaturedMenu />
         <AboutUs />

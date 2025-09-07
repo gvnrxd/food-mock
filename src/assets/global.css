@@ -55,7 +55,7 @@ main {
   width: 100%;
   max-width: 1100px;
   padding-inline: 1.5rem;
-  padding-block: 5.5rem 3rem; /* top padding leaves room for sticky nav */
+  padding-block: 4.5rem 3rem; /* top padding leaves room for sticky nav */
 }
 
 /* 3) Nav: sticky, full width, subtle frame */

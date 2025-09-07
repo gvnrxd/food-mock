@@ -5,16 +5,18 @@ export default function NavBar() {
   return (
     <>
       <nav className={styles.navBar}>
-        <img src={PizzaIcon} />
+        <a href="#">
+          <img src={PizzaIcon} />
+        </a>
         <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
           <li>
             <a href="#menu-title">Menu</a>
           </li>
           <li>
             <a href="#about-title">About</a>
+          </li>
+          <li>
+            <a href="#reviews-title">Reviews</a>
           </li>
           <li>
             <a href="#hours-title">Contact</a>

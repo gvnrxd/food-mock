@@ -4,7 +4,9 @@ import Review from "./CustomerReview";
 export default function CustomerReviews() {
   return (
     <>
-      <h2 className={styles.secHeader}>Customer Reviews</h2>
+      <h2 className={styles.secHeader} id="reviews-title">
+        Customer Reviews
+      </h2>
       <div className={styles.reviewSec}>
         <Review
           name="Sarah M."

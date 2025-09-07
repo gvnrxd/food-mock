@@ -12,8 +12,12 @@
 
 .modal {
   background: #fff;
+  /*
   max-width: 720px;
   width: min(92vw, 720px);
+*/
+  width: 90%;
+  height: auto;
   border-radius: 16px;
   padding: 1.25rem;
   outline: none;
